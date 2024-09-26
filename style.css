@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plain Light";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(18, 16, 16);
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+img{
+    width: 80px;
+    margin-left: 30px;
+}
+#logo{
+    margin: 20px 40px;
+    width: 20%;
+}
+#left{
+    /* background-color: beige; */
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid rgba(255,255,255,0.1);
+
+}
+#center{
+    /* background-color: red; */
+    width: 60%;
+    height: 100%;
+
+
+}
+#right{
+    /* background-color: blue; */
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    
+}
+#inputbar{
+    text-align: center;
+    height: 4vw;
+    /* background-color: #fff; */
+}
+#inputbar input{
+    border-radius: 20px;
+    background-color: #1d1c1c;
+    height: 3vw;
+    padding: 1vw 3vw;
+    color: aliceblue;
+    /* border: 0.5px solid #880c0c08; */
+    border: none;
+    /* border-color: rgb(227, 227, 227); */
+    /* border-width: 0.1px; */
+}
+#inputbar input[type=text]:focus{
+    border: 0.1px solid #fff;
+}
+#menu{
+    height: 10vw;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 0px 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    color: rgb(140, 140, 140);
+}
+#menu h3{
+    font-size: 0.8vw;
+    font-weight: 100;
+}
+#menu a{
+    text-decoration: none;
+    color: rgb(140,140,140);
+    display: flex;
+    gap: 0.3vw;
+    transition: 0.1s;
+}
+#menu a:hover{
+    color: aliceblue;
+}
+#library{
+    height: 10vw;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 0px 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 2vw;
+    color: rgb(140, 140, 140);
+}
+#library h3{
+    font-size: 0.8vw;
+    font-weight: 100;
+}
+#library a{
+    text-decoration: none;
+    color: rgb(140,140,140);
+    display: flex;
+    gap: 0.3vw;
+    transition: 0.1s;
+}
+#library a:hover{
+    color: aliceblue;
+}
+#other{
+    height: 10vw;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 0px 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    /* margin-top: 2vw; */
+    color: rgb(140, 140, 140);
+}
+#other h3{
+    font-size: 0.8vw;
+    font-weight: 100;
+}
+#other a{
+    text-decoration: none;
+    color: rgb(140,140,140);
+    display: flex;
+    gap: 0.3vw;
+    transition: 0.1s;
+}
+#other a:hover{
+    color: aliceblue;
+}
+#account{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 8vw;
+    padding: 2.8vw 1.1vw;
+    display: flex;
+    gap: 1.5vw;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    
+}
+#pfp{
+    border-radius: 50%;
+}
+#pfp img{
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    /* height: 3vw; */
+    width: 3vw;
+    border: 0.11px solid rgb(140,140,140);
+}
+#name{
+    color: aliceblue;
+    /* font-weight: 500; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw;
+    margin-top: 0.1vw;
+
+}
+#name h2{
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+#name h5{
+    /* font-size: 1.1vw; */
+    font-weight: 200;
+    color: rgb(140, 140, 140);
+}
+#noti i{
+    color: #fff;
+    /* margin-top: 10vw; */
+    font-size: 1.2vw;
+}
+#noti{
+    padding: 0.5vw 0vw;
+    /* height: 50%; */
+    /* width: 50%; */
+    /* background-color: antiquewhite; */
+}
+#player{
+    height: 20vw;
+    width: 100%;
+    /* background-color: aqua; */
+}
+#liked{
+    /* background-color: yellowgreen; */
+    height: 40%;
+    
+
+}
+#img1{
+    /* background-color: red; */
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* object-fit: cover; */
+
+}
+#img1 img{
+    height: 93%;
+    width: auto;
+    margin-top: 2.5vw;
+    margin-right: 1.5vw;
+    z-index: 1;
+    border-radius: 20px;
+}
+.text-overlay {
+    position: absolute;
+    top: 60%; 
+    left: 35%;
+    transform: translate(-50%, -50%); 
+    
+    z-index: 2; 
+}
+.text-overlay h3{
+    color: white; 
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.text-overlay span{
+    color: white; 
+    font-size: 2.1vw;
+    font-weight: 100;
+}
+.text-overlay #songs{
+    color: rgb(140, 140, 140);
+    margin-top: 1.5vw;
+}
+#center-top{
+    height: 4vw;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    margin-top: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 3vw;
+}
+#upgrade{
+    padding: 0.5vw 0.8vw;
+    border-radius: 20px;
+    border: 0.1vw solid rgb(140, 140, 140);
+    background-color: #1d1c1c;
+    color: aliceblue;
+    font-weight: lighter;
+}
+#made{
+    height: 4vw;
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 0.8vw 3vw;
+    font-size: 1.6vw;
+    color: #fff;
+    font-weight: 700;
+}
