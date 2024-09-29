@@ -31,12 +31,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 <body>
     <main>
         <div id="left">
+            <div id="glow"></div>
             <div id="logo">
-                <img src="Flux-removebg-preview.png" alt="">
+                <h1>FLUX</h1>
+                <!-- <img src="Flux-removebg-preview.png" alt=""> -->
             </div>
             <div id="inputbar">
                 <input type="text" placeholder="Search">
@@ -44,21 +49,22 @@
             <div id="menu">
                 <h3>Menu</h3>
                 <a href=""><i class="ri-home-fill"></i><h5>Home</h5></a>
-                <a href=""><i class="ri-play-circle-fill"></i><h5>Playlists</h5></a>
+                <a href=""><i class="ri-play-circle-fill"></i><h5>Playlists/liked</h5></a>
                 <a href=""><i class="ri-headphone-fill"></i><h5>Artists</h5></a>
                 <a href=""><i class="ri-headphone-line"></i><h5>Composers</h5></a>
             </div>
             <div id="library">
                 <h3>Library</h3>
-                <a href=""><i class="ri-book-open-fill"></i><h5>Album</h5></a>
-                <a href=""><i class="ri-music-fill"></i><h5>Songs</h5></a>
-                <a href=""><i class="ri-vidicon-fill"></i><h5>Music Videos</h5></a>
+                <a href=""><i class="ri-book-open-fill"></i><h5>All videos</h5></a>
+                <a href=""><i class="ri-music-fill"></i><h5>All Songs</h5></a>
+                <a href=""><i class="ri-vidicon-fill"></i><h5>Import from device</h5></a>
             </div>
             <div id="other">
                 <h3>Others</h3>
                 <a href=""><i class="ri-settings-3-fill"></i><h5>Settings</h5></a>
                 <a href=""><i class="ri-logout-box-r-fill"></i><h5>Logout</h5></a>
             </div>
+            <div id="bottomglow"></div>
         </div>
         <div id="center">
             <div id="center-top">
@@ -138,6 +144,23 @@
                            </div>
                     </div>
                     <div class="line"></div>
+                    <div class="allsongs">
+                        <div class="songdetails">
+                           <img class="songimage" src="https://m.media-amazon.com/images/I/71dijai7t+L.jpg" alt="">
+                           <span>
+                               <div class="songname">Highest in the room</div>
+                               <div class="songwriter">Travis Scott</div>
+                           </span>
+                           </div>
+                           <div class="songduration">
+                           <h4>0:00</h4>
+                           </div>
+                           <div class="songbuttons">
+                           <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                           <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
+                           </div>
+                    </div>
+                    <div class="line"></div>
                 </div>
 
             </div>
@@ -146,7 +169,7 @@
         <div id="right">
             <div id="account">
                 <div id="pfp">
-                    <img src="https://pyxis.nymag.com/v1/imgs/6d7/008/b20deeaf26fe2cdf0796d1e0ab4d5473bd-05-starboy.rsquare.w400.jpg" alt="">
+                    <img src="data:image/jpeg;base64,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" alt="">
                 </div>
                 <div id="name">
                     <h2>Garvit Singla</h2>

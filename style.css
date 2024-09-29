@@ -23,14 +23,34 @@ img{
     margin: 20px 40px;
     width: 80%;
     /* border-radius: 50%; */
-    /* background-color: #fff; */
+    
 }
+#logo h1{
+    font-family: "Rowdies", sans-serif;
+    color: #7A1DAC;
+    font-size: 42px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+#bottomglow{
+    -webkit-box-shadow:0px 0px 190px 63px rgba(122,29,172,0.1);
+    -moz-box-shadow: 0px 0px 190px 63px rgba(122,29,172,0.2);
+    box-shadow: 0px 0px 190px 63px rgba(122,29,172,0.1);
+}
+
 #left{
     /* background-color: beige; */
     width: 20%;
     height: 100%;
     border-right: 1px solid rgba(255,255,255,0.1);
+    position: relative;
 
+}
+#glow{
+    margin-top: 10px;;
+    -webkit-box-shadow:0px 0px 190px 63px rgba(122,29,172,0.3);
+    -moz-box-shadow: 0px 0px 190px 63px rgba(122,29,172,0.3);
+    box-shadow: 0px 0px 190px 63px rgba(122,29,172,0.3);
 }
 #center{
     /* background-color: red; */
@@ -208,6 +228,7 @@ img{
     /* background-color: yellowgreen; */
     height: 38%;
     
+    
 
 }
 #img1{
@@ -219,6 +240,7 @@ img{
     justify-content: center;
     position: relative;
     /* object-fit: cover; */
+    
 
 }
 #img1 img{
@@ -228,6 +250,9 @@ img{
     margin-right: 1.5vw;
     z-index: 1;
     border-radius: 20px;
+    -webkit-box-shadow:0px 0px 190px 9px rgba(122,29,172,0.32);
+    -moz-box-shadow: 0px 0px 190px 9px rgba(122,29,172,0.32);
+    box-shadow: 0px 0px 190px 9px rgba(122,29,172,0.32);
 }
 .text-overlay {
     position: absolute;
@@ -308,6 +333,9 @@ img{
     border-radius: 20px;
     padding: 1vw 2vw;
     color: #fff;
+    -webkit-box-shadow:0px 0px 190px 9px rgba(122,29,172,0.32);
+    -moz-box-shadow: 0px 0px 190px 9px rgba(122,29,172,0.32);
+    box-shadow: 0px 0px 190px 9px rgba(122,29,172,0.32);
 }
 #facts h2{
     font-family: "Macondo", cursive;
@@ -413,12 +441,21 @@ img{
 .likedbutton{
     color: white;
     padding: 1.3vw 0.8vw;
+    transition: color 0.1s;
 
+}
+.likedbutton:hover{
+    color: red;
 }
 .playbutton{
     color: red;
     font-size: 1.9vw;
     padding: 1vw 0.8vw;
+    transition: color 0.1s;
 
 
+
+}
+.playbutton:hover{
+    color: white;
 }
