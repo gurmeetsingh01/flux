@@ -505,12 +505,12 @@ img{
     position: absolute;
     top: 20px;
     right:20px;
-    height: 400px;
+    height: 330px;
     width: 270px;
     /* background-color: #; */
     backdrop-filter: blur(20px);
     background: rgba(34, 34, 34, 0.544);
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 10px 0px;
     z-index: 99999999999;
 }
