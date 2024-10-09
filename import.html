@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Video</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="import.css">
+
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Import Video</h1>
+        <div class="file-input">
+            <label for="video-input">
+                <i class="ri-upload-cloud-2-line"></i> Choose Video File
+            </label>
+            <input type="file" id="video-input" accept="video/*">
+        </div>
+        <div class="instructions">Choose a video from your device and it will play here</div>
+        <video id="video-player" controls hidden></video>
+    </div>
+
+    <script>
+        const videoInput = document.getElementById('video-input');
+        const videoPlayer = document.getElementById('video-player');
+
+        videoInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const videoURL = URL.createObjectURL(file); // Create a URL for the selected video file
+                videoPlayer.src = videoURL;
+                videoPlayer.hidden = false; // Show the video player
+                videoPlayer.load(); // Load the selected video
+            }
+        });
+    </script>
+
+</body>
+</html>

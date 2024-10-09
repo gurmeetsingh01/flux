@@ -57,7 +57,7 @@
                 <h3>Library</h3>
                 <a href=""><i class="ri-book-open-fill"></i><h5>All videos</h5></a>
                 <a href=""><i class="ri-music-fill"></i><h5>All Songs</h5></a>
-                <a href=""><i class="ri-vidicon-fill"></i><h5>Import from device</h5></a>
+                <a href="import.html"><i class="ri-vidicon-fill"></i><h5>Import from device</h5></a>
             </div>
             <div id="other">
                 <h3>Others</h3>
@@ -114,8 +114,12 @@
                         </div>
                         <div class="songbuttons">
                         <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
-                        <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
+                        <span class="playbutton" id="stopbutton"><i class="ri-play-circle-fill"></i></span>
                         </div>
+                        <audio id="audio-player">
+                            <source src="audio/starboy.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
                     <div class="line"></div>
                     <div class="allsongs">
@@ -133,6 +137,7 @@
                            <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
                            <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
                            </div>
+                          
                     </div>
                     <div class="line"></div>
                     <div class="allsongs">
@@ -209,6 +214,9 @@
                 <div id="noti"><i class="ri-notification-3-fill"></i></div>
             </div>
             <div id="player">
+                <div class="playcontrols">
+                    
+                </div>
                 <img src="images/toomanynights.jpg" alt="">
             </div>
             <div id="liked">
