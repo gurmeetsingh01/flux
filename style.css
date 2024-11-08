@@ -138,6 +138,13 @@ img{
     gap: 0.3vw;
     transition: 0.1s;
 }
+#menu a span{
+    text-decoration: none;
+    color: rgb(140,140,140);
+    display: flex;
+    gap: 0.3vw;
+    transition: 0.1s;
+}
 #menu a:hover{
     color: aliceblue;
 }
@@ -508,6 +515,9 @@ img{
 
 
 
+}
+.active{
+    color: #fff;
 }
 .playbutton:hover{
     color: white;
