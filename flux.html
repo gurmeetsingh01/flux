@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux - Web Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flux.css">
+<body>
+    <main>
+        <div id="left">
+            <div id="glow"></div>
+            <div id="logo">
+                <!-- <h1>FLUX</h1> -->
+                <img src="images/Flux-removebg-preview.png" alt="">
+            </div>
+            <div id="inputbar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div id="menu">
+                <h3>Menu</h3>
+                <a href=""><span class="active"><i  class="ri-home-fill"></i><h5 ">Home</h5></span></a>
+                <a href=""><i class="ri-play-circle-fill"></i><h5>Playlists/liked</h5></a>
+                <a href=""><i class="ri-headphone-fill"></i><h5>Artists</h5></a>
+                <a href=""><i class="ri-headphone-line"></i><h5>Composers</h5></a>
+            </div>
+            <div id="library">
+                <h3>Library</h3>
+                <a href=""><i class="ri-book-open-fill"></i><h5>All videos</h5></a>
+                <a href=""><i class="ri-music-fill"></i><h5>All Songs</h5></a>
+                <a href="import.html"><i class="ri-vidicon-fill"></i><h5>Import from device</h5></a>
+            </div>
+            <div id="other">
+                <h3>Others</h3>
+                <a href=""><i class="ri-settings-3-fill"></i><h5>Settings</h5></a>
+                <a href="index.html"><i class="ri-logout-box-r-fill"></i><h5>Logout</h5></a>
+            </div>
+            <div id="bottomglow"></div>
+            <div id="follow">
+                <h2>Follow us on</h2>
+                <span>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-youtube-line"></i></a>
+                    <a href="#"><i class="ri-dribbble-line"></i></a>
+                </span>
+            </div>
+        </div>
+        <div id="center">
+            <div id="center-top">
+                <button id="upgrade">
+                    Upgrade
+                </button>
+            </div>
+            <div id="made">
+                <h2>Made for you</h2>
+            </div>
+            <div id="video">
+                <video autoplay muted loop src="videos/RATS (2D Animation).mp4"></video>
+                <div id="facts">
+                    <h2>Some cool facts</h2>
+                    <p>The term "starboy" is Jamaican slang for someone who is seen as cool or important.</p>
+                </div>
+
+            </div>
+            <div id="played">
+                <h2>Recently played</h2>
+            </div>
+            <div id="songslist">
+                <div id="headings1">
+                    <span>#Song</span>
+                    <span>#Duration</span>
+                </div>
+                <div class="line"></div>
+                <div class="list">
+                   <div class="allsongs">
+                     <div class="songdetails">
+                        <img class="songimage" src="images/starboy.jpg"" alt="">
+                        <span>
+                            <div class="songname">Starboy</div>
+                            <div class="songwriter">The Weekend</div>
+                        </span>
+                        </div>
+                        <div class="songduration">
+                        <h4>0:00</h4>
+                        </div>
+                        <div class="songbuttons">
+                        <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                        <span class="playbutton" id="stopbutton"><i class="ri-play-circle-fill"></i></span>
+                        </div>
+                        <audio id="audio-player">
+                            <source src="audio/starboy.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="line"></div>
+                    <div class="allsongs">
+                        <div class="songdetails">
+                           <img class="songimage" src="images/toomanynights.jpg" alt="">
+                           <span>
+                               <div class="songname">Too Many nights</div>
+                               <div class="songwriter">Metro Boomin</div>
+                           </span>
+                           </div>
+                           <div class="songduration">
+                           <h4>0:00</h4>
+                           </div>
+                           <div class="songbuttons">
+                           <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                           <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
+                           </div>
+                          
+                    </div>
+                    <div class="line"></div>
+                    <div class="allsongs">
+                        <div class="songdetails">
+                           <img class="songimage" src="images/blindinglights.jpg" alt="">
+                           <span>
+                               <div class="songname">Blinding Lights</div>
+                               <div class="songwriter">The Weekend</div>
+                           </span>
+                           </div>
+                           <div class="songduration">
+                           <h4>0:00</h4>
+                           </div>
+                           <div class="songbuttons">
+                           <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                           <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
+                           </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="allsongs">
+                        <div class="songdetails">
+                           <img class="songimage" src="images/highestinroom.jpg" alt="">
+                           <span>
+                               <div class="songname">Highest in the room</div>
+                               <div class="songwriter">Travis Scott</div>
+                           </span>
+                           </div>
+                           <div class="songduration">
+                           <h4>0:00</h4>
+                           </div>
+                           <div class="songbuttons">
+                           <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                           <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
+                           </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div id="right">
+            <div class="overlayin" id="accountoverlay">
+                <div id="topoverlay">
+                    <div id="pfpinoverlay">
+                        <img src="images/profilepic.jpg" alt="">
+                    </div>
+                    <div id="accountname">
+                        Garvit Singla
+                    </div>
+                    <i id="closeOverlay" class="ri-close-circle-fill"></i> <!-- Close icon -->
+                </div>
+                <div id="line1"></div>
+                <div id="location">
+                    <h4>Listening from India</h4>
+                    <i class="ri-map-pin-fill"></i>
+                </div>
+                <div id="line1"></div>
+                <div id="subscription">
+                    <h4>Premium subscription</h4>
+                    <p>Unlock all premium features with only $99.99</p>
+                    <button id="upgrade1">Buy premium</button>
+                </div>
+                <div id="line1"></div>
+            </div>
+            <div id="account">
+                <div id="pfp">
+                    <img src="images/profilepic.jpg" alt="">
+                </div>
+                <div id="name">
+                    <h2>Garvit Singla</h2>
+                    <h5>Account</h5>
+                </div>
+                <div id="noti"><i class="ri-notification-3-fill"></i></div>
+            </div>
+            <div id="player">
+                
+                <img id="playerimage" src="images/toomanynights.jpg" alt="">
+            </div>
+            <div id="liked">
+                <div id="img1">
+                    <img src="images/image 4.png" alt="">
+                    <div class="text-overlay">
+                        <h3>Liked</h3>
+                        <span>Songs</span>
+                        <div id="songs">
+                            120 songs
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>    
+    <script src="script.js"></script>
+</body>
+</html>
