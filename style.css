@@ -188,19 +188,22 @@ label {
 .text a:hover {
   color: #8371fd;
 }
-form.sign-in-form {
+
+main.sign-up-mode form.sign-in-form {
   opacity: 0;
   pointer-events: none;
 }
-form.sign-up-form {
+
+main.sign-up-mode form.sign-up-form {
   opacity: 1;
   pointer-events: all;
 }
 
-.forms-wrap {
+main.sign-up-mode .forms-wrap {
   left: 55%;
 }
-.carousel {
+
+main.sign-up-mode .carousel {
   left: 0%;
 }
 
