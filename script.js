@@ -42,3 +42,4 @@ playbtn.addEventListener('click', () => {
         playbtn.innerHTML = '<i class="ri-play-circle-fill"></i>'; // Change button text to 'Play' when paused
     }
 });
+
