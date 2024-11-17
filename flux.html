@@ -84,7 +84,7 @@
                 <h2>Made for you</h2>
             </div>
             <div id="video">
-                <video autoplay muted loop src="videos/RATS (2D Animation).mp4"></video>
+                <video class="randomvideo" autoplay muted loop src="videos/RATS (2D Animation).mp4"></video>
                 <div id="facts">
                     <h2>Some cool facts</h2>
                     <p>The term "starboy" is Jamaican slang for someone who is seen as cool or important.</p>
@@ -101,77 +101,91 @@
                 </div>
                 <div class="line"></div>
                 <div class="list">
-                   <div class="allsongs">
-                     <div class="songdetails">
-                        <img class="songimage" src="images/starboy.jpg"" alt="">
-                        <span>
-                            <div class="songname">Starboy</div>
-                            <div class="songwriter">The Weekend</div>
-                        </span>
+                    <div class="allsongs">
+                        <div class="songdetails">
+                            <img class="songimage" src="images/starboy.jpg" alt="">
+                            <span>
+                                <div class="songname">Starboy</div>
+                                <div class="songwriter">The Weeknd</div>
+                            </span>
                         </div>
-                        <div class="songduration">
-                        <h4>0:00</h4>
+                        <div class="songduration" id="duration-starboy">
+                            <h4>3:50</h4>
                         </div>
                         <div class="songbuttons">
-                        <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
-                        <span class="playbutton" id="stopbutton"><i class="ri-play-circle-fill"></i></span>
+                            <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                            <span class="playbutton" data-song="starboy" data-image="images/starboy.jpg"><i class="ri-play-circle-fill"></i></span>
                         </div>
-                        <audio id="audio-player">
+                        <audio id="audio-player-starboy">
                             <source src="audio/starboy.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="line"></div>
+
                     <div class="allsongs">
                         <div class="songdetails">
-                           <img class="songimage" src="images/toomanynights.jpg" alt="">
-                           <span>
-                               <div class="songname">Too Many nights</div>
-                               <div class="songwriter">Metro Boomin</div>
-                           </span>
-                           </div>
-                           <div class="songduration">
-                           <h4>0:00</h4>
-                           </div>
-                           <div class="songbuttons">
-                           <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
-                           <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
-                           </div>
-                          
+                            <img class="songimage" src="images/toomanynights.jpg" alt="">
+                            <span>
+                                <div class="songname">Too Many Nights</div>
+                                <div class="songwriter">Metro Boomin</div>
+                            </span>
+                        </div>
+                        <div class="songduration" id="duration-toomanynights">
+                            <h4>3:20</h4>
+                        </div>
+                        <div class="songbuttons">
+                            <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                            <span class="playbutton" data-song="toomanynights" data-image="images/toomanynights.jpg"><i class="ri-play-circle-fill"></i></span>
+                        </div>
+                        <audio id="audio-player-toomanynights">
+                            <source src="audio/toomanynights.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
                     <div class="line"></div>
+
                     <div class="allsongs">
                         <div class="songdetails">
-                           <img class="songimage" src="images/blindinglights.jpg" alt="">
-                           <span>
-                               <div class="songname">Blinding Lights</div>
-                               <div class="songwriter">The Weekend</div>
-                           </span>
-                           </div>
-                           <div class="songduration">
-                           <h4>0:00</h4>
-                           </div>
-                           <div class="songbuttons">
-                           <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
-                           <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
-                           </div>
+                            <img class="songimage" src="images/blindinglights.jpg" alt="">
+                            <span>
+                                <div class="songname">Blinding Lights</div>
+                                <div class="songwriter">The Weeknd</div>
+                            </span>
+                        </div>
+                        <div class="songduration" id="duration-blindinglights">
+                            <h4>4:22</h4>
+                        </div>
+                        <div class="songbuttons">
+                            <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                            <span class="playbutton" data-song="blindinglights" data-image="images/blindinglights.jpg"><i class="ri-play-circle-fill"></i></span>
+                        </div>
+                        <audio id="audio-player-blindinglights">
+                            <source src="audio/blindinglights.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
                     <div class="line"></div>
+
                     <div class="allsongs">
                         <div class="songdetails">
-                           <img class="songimage" src="images/highestinroom.jpg" alt="">
-                           <span>
-                               <div class="songname">Highest in the room</div>
-                               <div class="songwriter">Travis Scott</div>
-                           </span>
-                           </div>
-                           <div class="songduration">
-                           <h4>0:00</h4>
-                           </div>
-                           <div class="songbuttons">
-                           <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
-                           <span class="playbutton"><i class="ri-play-circle-fill"></i></span>
-                           </div>
+                            <img class="songimage" src="images/highestinroom.jpg" alt="">
+                            <span>
+                                <div class="songname">Highest in the room</div>
+                                <div class="songwriter">Travis Scott</div>
+                            </span>
+                        </div>
+                        <div class="songduration" id="duration-highestintheroom">
+                            <h4>2:57</h4>
+                        </div>
+                        <div class="songbuttons">
+                            <span class="likedbutton"><i class="ri-heart-2-fill"></i></span>
+                            <span class="playbutton" data-song="highestintheroom" data-image="images/highestinroom.jpg"><i class="ri-play-circle-fill"></i></span>
+                        </div>
+                        <audio id="audio-player-highestintheroom">
+                            <source src="audio/highestintheroom.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
                     <div class="line"></div>
                 </div>
@@ -232,5 +246,6 @@
         </div>
     </main>    
     <script src="script.js"></script>
+    
 </body>
 </html>
